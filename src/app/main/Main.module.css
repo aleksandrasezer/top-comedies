@@ -1,0 +1,37 @@
+.header {
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: darkred;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+.moviesContainer {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+.footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer img {
+    height: 20px;
+}
+@media screen and (max-width: 790px) {
+    .header {width: 100%}
+    .moviesContainer {justify-content: center; width: 100%}
+}
