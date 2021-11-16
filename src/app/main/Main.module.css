@@ -12,6 +12,17 @@
     border-bottom-left-radius: 2px;
     box-shadow: 0 0 7px rgba(0,0,0,0.5);
 }
+.sortArea {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 597px) {
+    .sortArea {justify-content: center}
+}
 .moviesContainer {
     width: 80%;
     margin: 20px auto;
@@ -34,4 +45,14 @@
 @media screen and (max-width: 790px) {
     .header {width: 100%}
     .moviesContainer {justify-content: center; width: 100%}
+}
+.sortArea button {
+    padding: 2px;
+    margin: 5px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    font-size: 1em;
+    border-radius: 3px;
+}
+.sortArea input {
+    font-size: 1em;
 }

@@ -4,12 +4,18 @@ import {AppThunk} from "./store";
 
 const initState: InitStateType = {
     movies: [],
+    sortDirection: 'idle',
+    searchText: '',
 }
 
 export const moviesReducer = (state = initState, action: ActionType) => {
     switch (action.type) {
         case 'MAIN/SET-MOVIES':
             return {...state, movies: action.movies}
+        case 'MAIN/SET-SORTING':
+            return {...state, sortDirection: action.sortDirection}
+        case 'MAIN/SET-SEARCH-TEXT':
+            return {...state, searchText: action.searchText}
         default:
             return state
     }
@@ -17,6 +23,9 @@ export const moviesReducer = (state = initState, action: ActionType) => {
 
 //action creators
 export const setMovies = (movies: MovieResponseType[]) => ({type: 'MAIN/SET-MOVIES', movies}) as const
+export const setSorting = (sortDirection: SortDirectionType) => ({type: 'MAIN/SET-SORTING', sortDirection}) as const
+export const setSearchText = (searchText: string) => ({type: 'MAIN/SET-SEARCH-TEXT', searchText}) as const
+
 
 //thunk
 export const fetchMovies = (): AppThunk => {
@@ -45,5 +54,10 @@ export type MovieResponseType = {
 }
 export type InitStateType = {
     movies: MovieResponseType[]
+    sortDirection: SortDirectionType
+    searchText: string
 }
+export type SortDirectionType = 'idle' | 'down' | 'up'
 export type ActionType = ReturnType<typeof setMovies>
+    | ReturnType<typeof setSorting>
+    | ReturnType<typeof setSearchText>

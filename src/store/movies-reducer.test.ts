@@ -1,4 +1,4 @@
-import {InitStateType, moviesReducer, setMovies} from './movies-reducer'
+import {InitStateType, moviesReducer, setMovies, setSearchText, setSorting} from './movies-reducer'
 
 let startState: InitStateType;
 const data = [
@@ -35,7 +35,9 @@ const data = [
 
 beforeEach(() => {
     startState = {
-        movies: []
+        movies: [],
+        sortDirection: 'idle',
+        searchText: '',
     }
 })
 
@@ -49,5 +51,25 @@ test('Second movie title should be "Venom: Let There Be Carnage"', () => {
 
     const endState = moviesReducer(startState, setMovies(data))
     expect(endState.movies[1].title).toBe("Venom: Let There Be Carnage");
+})
+test('Sorting direction should change to "down"', () => {
+
+    const endState = moviesReducer(startState, setSorting('down'))
+    expect(endState.sortDirection).toBe("down");
+})
+test('Sorting direction should change to "up"', () => {
+
+    const endState = moviesReducer(startState, setSorting('up'))
+    expect(endState.sortDirection).toBe("up");
+})
+test('Input text for a search should change', () => {
+
+    const endState = moviesReducer(startState, setSearchText('stsrthrth'))
+    expect(endState.searchText).not.toBe(0);
+})
+test('Input text for a search should be "Hire me"', () => {
+
+    const endState = moviesReducer(startState, setSearchText('Hire me'))
+    expect(endState.searchText).toBe('Hire me');
 })
 
