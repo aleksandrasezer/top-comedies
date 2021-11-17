@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useEffect, useState} from "react";
+import React, {ChangeEvent, useEffect, useState, KeyboardEvent} from "react";
 import {Movie} from "../movie/Movie";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../store/store";
@@ -24,6 +24,12 @@ export const Main = () => {
         dispatch(setSearchText(searchInput))
         setSearchInput('')
     }
+    const onEnterHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            dispatch(setSearchText(searchInput))
+            setSearchInput('')
+        }
+    }
 
     let moviesToDisplay = movies
     if (sortDirection === 'down') {
@@ -48,7 +54,9 @@ export const Main = () => {
                     <button onClick={sortDown} disabled={sortDirection === 'down'}>high to low</button>
                 </div>
                 <div>
-                    <input onChange={onInputChange} value={searchInput}/>
+                    <input onChange={onInputChange}
+                           value={searchInput}
+                           onKeyPress={onEnterHandler}/>
                     <button onClick={onSearch}>search</button>
                 </div>
             </div>
