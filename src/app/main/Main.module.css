@@ -1,7 +1,7 @@
 .header {
     width: 80%;
     margin: 0 auto;
-    height: 50px;
+    height: 60px;
     line-height: 50px;
     text-align: center;
     color: white;
@@ -29,7 +29,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-between;
-    grid-gap: 20px;
+    grid-gap: 30px;
 }
 .footer {
     height: 50px;

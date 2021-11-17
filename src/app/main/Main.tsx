@@ -62,7 +62,7 @@ export const Main = () => {
                 )}
             </div>
             <div className={s.footer}>
-                <a href='https://github.com/aleksandrasezer'>
+                <a href='https://github.com/aleksandrasezer' target='_blank'>
                     <img src={ghLogo} alt='gh-logo'/>
                     Aleksandra Sezer</a>
             </div>
