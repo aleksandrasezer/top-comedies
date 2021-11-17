@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/top-comedies/static/css/main.42a65b7a.chunk.css",
-    "main.js": "/top-comedies/static/js/main.f77d1b71.chunk.js",
-    "main.js.map": "/top-comedies/static/js/main.f77d1b71.chunk.js.map",
+    "main.js": "/top-comedies/static/js/main.114a7fe9.chunk.js",
+    "main.js.map": "/top-comedies/static/js/main.114a7fe9.chunk.js.map",
     "runtime-main.js": "/top-comedies/static/js/runtime-main.fbd88962.js",
     "runtime-main.js.map": "/top-comedies/static/js/runtime-main.fbd88962.js.map",
     "static/js/2.4611536b.chunk.js": "/top-comedies/static/js/2.4611536b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.fbd88962.js",
     "static/js/2.4611536b.chunk.js",
     "static/css/main.42a65b7a.chunk.css",
-    "static/js/main.f77d1b71.chunk.js"
+    "static/js/main.114a7fe9.chunk.js"
   ]
 }
