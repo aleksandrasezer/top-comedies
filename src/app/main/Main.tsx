@@ -43,7 +43,7 @@ export const Main = () => {
 
     useEffect(() => {
         dispatch(fetchMovies())
-    }, [dispatch, movies])
+    }, [dispatch])
 
     return (
         <div>
