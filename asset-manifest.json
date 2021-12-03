@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/top-comedies/static/css/main.42a65b7a.chunk.css",
-    "main.js": "/top-comedies/static/js/main.114a7fe9.chunk.js",
-    "main.js.map": "/top-comedies/static/js/main.114a7fe9.chunk.js.map",
+    "main.css": "/top-comedies/static/css/main.847cfd43.chunk.css",
+    "main.js": "/top-comedies/static/js/main.fcd642ac.chunk.js",
+    "main.js.map": "/top-comedies/static/js/main.fcd642ac.chunk.js.map",
     "runtime-main.js": "/top-comedies/static/js/runtime-main.fbd88962.js",
     "runtime-main.js.map": "/top-comedies/static/js/runtime-main.fbd88962.js.map",
     "static/js/2.4611536b.chunk.js": "/top-comedies/static/js/2.4611536b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.4c6efb89.chunk.js": "/top-comedies/static/js/3.4c6efb89.chunk.js",
     "static/js/3.4c6efb89.chunk.js.map": "/top-comedies/static/js/3.4c6efb89.chunk.js.map",
     "index.html": "/top-comedies/index.html",
-    "static/css/main.42a65b7a.chunk.css.map": "/top-comedies/static/css/main.42a65b7a.chunk.css.map",
+    "static/css/main.847cfd43.chunk.css.map": "/top-comedies/static/css/main.847cfd43.chunk.css.map",
     "static/js/2.4611536b.chunk.js.LICENSE.txt": "/top-comedies/static/js/2.4611536b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fbd88962.js",
     "static/js/2.4611536b.chunk.js",
-    "static/css/main.42a65b7a.chunk.css",
-    "static/js/main.114a7fe9.chunk.js"
+    "static/css/main.847cfd43.chunk.css",
+    "static/js/main.fcd642ac.chunk.js"
   ]
 }
